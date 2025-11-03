@@ -12,7 +12,7 @@ A Flask-based REST API for booking escape room time slots with a 5-minute hold m
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/mikejaffe/escape-room-api
 cd escape-room-api
 ```
 
