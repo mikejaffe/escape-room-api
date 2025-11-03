@@ -1,0 +1,14 @@
+flask
+flask-sqlalchemy
+flask-migrate
+flask-login
+pytest
+# flask-wtf
+# flask-bcrypt
+# flask-mail
+# flask-admin
+# flask-admin-argon2
+# flask-admin-argon2-login
+# flask-admin-argon2-login-admin
+# flask-admin-argon2-login-admin-argon2
+# flask-admin-argon2-login-admin-argon2-login

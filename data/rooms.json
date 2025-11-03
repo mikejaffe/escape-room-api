@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Room 1",
+    "description": "Escape room 1",
+    "price": 10.00
+  },
+  {
+    "id": 2,
+    "name": "Room 2",
+    "description": "Escape room 2",
+    "price": 12.50
+  },
+  {
+    "id": 3,
+    "name": "Room 3",
+    "description": "Escape room 3",
+    "price": 15.00
+  },
+  {
+    "id": 4,
+    "name": "Room 4",
+    "description": "Escape room 4",
+    "price": 17.50
+  },
+  {
+    "id": 5,
+    "name": "Room 5",
+    "description": "Escape room 5",
+    "price": 20.00
+  },
+  {
+    "id": 6,
+    "name": "Room 6",
+    "description": "Escape room 6",
+    "price": 22.50
+  },
+  {
+    "id": 7,
+    "name": "Room 7",
+    "description": "Escape room 7",
+    "price": 25.00
+  },
+  {
+    "id": 8,
+    "name": "Room 8",
+    "description": "Escape room 8",
+    "price": 27.50
+  },
+  {
+    "id": 9,
+    "name": "Room 9",
+    "description": "Escape room 9",
+    "price": 30.00
+  },
+  {
+    "id": 10,
+    "name": "Room 10",
+    "description": "Escape room 10",
+    "price": 32.50
+  }
+]
