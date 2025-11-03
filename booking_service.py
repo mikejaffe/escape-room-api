@@ -2,12 +2,12 @@ from datetime import datetime, timedelta, timezone
 from sqlalchemy import text
 from app import db
 from models import Booking, Room, User
-
+import os
 class BookingService:
     
     @staticmethod
     def _get_expired_threshold():
-        return datetime.now(timezone.utc) - timedelta(minutes=5)
+        return datetime.now(timezone.utc) - timedelta(minutes=int(os.getenv('BOOKING_HOLD_MINUTES', 5)))
     
     @staticmethod
     def _parse_datetime(dt):
@@ -192,7 +192,7 @@ class BookingService:
 
     @staticmethod
     def get_available_rooms_by_date_range(start_date, end_date):
-        sql = """
+        sql = f"""
             SELECT r.id, r.name, r.description, r.price FROM room r WHERE NOT EXISTS (
                 SELECT 1 FROM booking b
                 WHERE b.room_id = r.id
@@ -202,7 +202,7 @@ class BookingService:
                     b.status = 'confirmed'
                     OR (
                       b.status = 'pending'
-                      AND b.created_at > DATETIME('now', '-5 minutes')
+                      AND b.created_at > DATETIME('now', '-{int(os.getenv('BOOKING_HOLD_MINUTES', 5))} minutes')
                     )
                   )
             )
